@@ -2,6 +2,9 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+#site-name{
+  color: blueviolet;
+}
 .search-field {
   border: none;
   border-radius: 50px;
@@ -13,21 +16,30 @@ body {
   border: none;
 }
 .search-box {
-  border: 1px solid rgb(3, 118, 211);
+  border: 1px solid blueviolet;
   width: 281px;
   border-radius: 5px;
   margin: auto;
   margin-top: 50px;
+  margin-bottom: 50px;
   border-right: none;
 }
 .search-button {
   padding: 10px 50px;
   border-radius: 25px;
-  margin-left: 20px;
+  margin-left: 25px;
+  background-color: blueviolet;
+  color: white;
+}
+.search-button:hover{
+  color: blueviolet;
+  background-color: lavender;
 }
 #all-products {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  column-gap: 10px;
+  row-gap: 10px;
   /* border: 1px solid black; */
   text-align: center;
   width: 100%;
@@ -36,19 +48,25 @@ body {
   justify-content: center;
 }
 .single-product {
+  min-height: 550px;
   padding: 10px;
   transition: 0.6s;
+  background-color: blueviolet;
+  color: white;
 }
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
   border: 1px solid cyan;
+  background-color: lavender;
+  color: blueviolet;
 }
 .product-image {
   width: 150px;
   height: 150px;
 }
 .cart {
+  color: blueviolet;
   width: 350px;
   /* border: 1px solid green; */
   padding: 10px;
@@ -60,6 +78,14 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+.buy-btn {
+  color: white;
+  background-color: blueviolet;
+}
+.buy-btn:hover{
+  background-color: lavender;
+}
+
 @media only screen and (max-width: 768px) {
   #all-products {
     display: grid;
@@ -84,3 +110,4 @@ body {
     grid-template-columns: repeat(1, 1fr);
   }
 }
+
