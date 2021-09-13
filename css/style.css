@@ -2,6 +2,7 @@ body {
   overflow-x: hidden;
   font-family: "Montserrat", sans-serif;
 }
+/* site name style  */
 #site-name{
   color: blueviolet;
 }
@@ -31,6 +32,7 @@ body {
   background-color: blueviolet;
   color: white;
 }
+/* search button hover style  */
 .search-button:hover{
   color: blueviolet;
   background-color: lavender;
@@ -47,6 +49,7 @@ body {
   align-items: center;
   justify-content: center;
 }
+/* cads style general */
 .single-product {
   min-height: 550px;
   padding: 10px;
@@ -54,6 +57,7 @@ body {
   background-color: blueviolet;
   color: white;
 }
+/* cars style on hover  */
 .single-product:hover {
   box-shadow: 4px 4px 7px gray;
   border-radius: 10px;
@@ -78,6 +82,8 @@ body {
 .cart-main {
   padding-right: 30px;
 }
+
+/* buy now button style  */
 .buy-btn {
   color: white;
   background-color: blueviolet;

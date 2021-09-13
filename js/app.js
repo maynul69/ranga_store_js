@@ -33,6 +33,7 @@ const addToCart = (id, price) => {
   updatePrice("price", price);
   updateTaxAndCharge();
   document.getElementById("total-Products").innerText = count;
+  // to update the total price when the button is clicked
   updateTotal();
 };
 
@@ -47,6 +48,8 @@ const updatePrice = (id, value) => {
   const convertedOldPrice = getInputValue(id);
   const convertPrice = parseFloat(value);
   const total = convertedOldPrice + convertPrice;
+
+  //showing total price in two decimal pecision
   const totalInTwoDec=total.toFixed(2)
   document.getElementById(id).innerText = totalInTwoDec;
 };
